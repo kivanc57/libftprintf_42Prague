@@ -11,16 +11,35 @@
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <stdarg.c>
+#include <stdarg.h>
+#include <unistd.h>
 
-int ft_printf(const char *, ...)
+static  ft_putchar_va_list(va_list args)
 {
+    const char  *c;
 
+    c = va_args(args, char)
+    write(1, &c, 1);
 }
 
 
-int main(void)
+int ft_printf(const char *format, ...)
 {
-    printf("%d\n", 12);
-    return (0);
+    unsigned int    i;
+    unsigned int    j;
+    const char      *temp;
+
+    i = 0;
+    j = 0;
+    va_list args;
+    va_start(args, format);
+    /* while (format[i] != \0) */
+    {
+        if (format[i] == '%')
+        {
+            if (format[i + 1] == 'c')
+                ft_putchar_va_list(va_list args)
+        }
+
+    }
 }
