@@ -1,7 +1,7 @@
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
-NAME = printf.a
+NAME = ft_printf.a
 
 LIB_SRCS = ft_printf.c ft_printf_char.c ft_printf_digit.c\
 				ft_printf_str.c ft_printf_unsigned.c
